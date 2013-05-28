@@ -40,3 +40,18 @@ checkIfMail (emailDomains);
 /* ---------------------------------------------------------- */
 
 /* Checks for secure HTTP */
+var domains = ["http://hello.com","https://there.com"];
+
+var checkIfSecure = function (domains){
+	for (var k = 0; k < domains.length; k++){
+		var domName = domains [k];
+		if (domName.indexOf("s")==4 && domName.substring(0,4)=="http"){ //Boolean check for https at the beginning
+			console.log (domName + " is accessed securely.");
+		}
+		else {
+			console.log (domName + " is not securely accessed.");
+		}
+	}
+}
+
+checkIfSecure (domains);
