@@ -47,8 +47,14 @@ var checkIfSecure = function (domains){
 /* Split into words and then Upcase only the first letter of each word */
 
 var caseSplitter = function (jumbleWords){
-	if 
+	var stringy = jumbleWords.charAt(0).toUpperCase() + jumbleWords.slice(1); //Uppercases the first letter. Leaves the rest. 
+	return stringy;
 }
+
+/* ---------------------------------------------------------- */
+
+/* Three args enter, one arg leaves */
+
 
 
 /* Return Objects to the outside world */
