@@ -6,3 +6,4 @@ console.log ("Is this a phone number? " + nLibstance.checkString ("123-456-7890"
 console.log ("Is this a proper email address? " + nLibstance.checkIfMail ("hello@there.com"));
 console.log ("Is this a proper domain? " + nLibstance.checkIfSecure ("https://hello.com"));
 console.log ("Uppercase first letter : " + nLibstance.caseSplitter ("hello there"));
+console.log ("This is the replaced output : " + nLibstance.argenator ("a,b,c",",","/"));

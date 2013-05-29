@@ -48,12 +48,17 @@ var checkIfSecure = function (domains){
 
 var caseSplitter = function (jumbleWords){
 	var stringy = jumbleWords.charAt(0).toUpperCase() + jumbleWords.slice(1); //Uppercases the first letter. Leaves the rest. 
-	return stringy;
+	return stringy; //Re-visit later to see if you can figure out how to do each word individually.. maybe try split?
 }
 
 /* ---------------------------------------------------------- */
 
 /* Three args enter, one arg leaves */
+
+var argenator = function (stringularity, sepOne, sepTwo){
+	var returnicus = stringularity.split(sepOne).join(sepTwo); // Find the seperator then replace and join w/new seperator
+	return returnicus;
+}
 
 
 
@@ -63,7 +68,8 @@ return {
 	"checkString" : checkString,
 	"checkIfMail" : checkIfMail,
 	"checkIfSecure" : checkIfSecure,
-	"caseSplitter" : caseSplitter
+	"caseSplitter" : caseSplitter,
+	"argenator" : argenator
 }
 
 } // Ends the qLib
