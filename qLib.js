@@ -64,10 +64,37 @@ var argenator = function (stringularity, sepOne, sepTwo){
 /* Cut the decimals! */
 
 var decibus = function (numPut, decPlaces){
-	var numOut = numPut.toFixed(2);
+	var numOut = numPut.toFixed(2);  // Takes number and cuts off other possible trailing digits
 	return numOut;
 }
 
+/* ---------------------------------------------------------- */
+
+/* Fuzzy slippers? NO! Fuzzy matching */
+
+var fuzzyLogic = function (numOne, numTwo, numThree){
+	var oneTwo = true; 
+	var greaLess = "greater";
+	if (numOne > numTwo){
+		oneTwo = true;
+		greaLess = "greater";
+	}
+	else {
+		oneTwo = false;
+		greaLess = "less";
+	}
+	var oneThree = ((numOne / numTwo)*100);
+	var withinFifty;
+	if (oneThree <= numThree){
+		withinFifty = "within 50%";
+	}
+	else {
+		withinFifty = "over 50%";
+	}
+	return [greaLess, withinFifty];
+}
+
+/* ----------------------------------------------------------- */
 
 
 
@@ -79,7 +106,8 @@ return {
 	"checkIfSecure" : checkIfSecure,
 	"caseSplitter" : caseSplitter,
 	"argenator" : argenator,
-	"decibus" : decibus
+	"decibus" : decibus,
+	"fuzzyLogic" : fuzzyLogic
 }
 
 } // Ends the qLib
