@@ -41,8 +41,7 @@ var checkIfSecure = function (domains){
 		}
 }
 
-
-/* ---------------------------------------------------------- */
+/* -------------------------------------------------------- */
 
 /* Split into words and then Upcase only the first letter of each word */
 
@@ -51,7 +50,7 @@ var caseSplitter = function (jumbleWords){
 	return stringy; //Re-visit later to see if you can figure out how to do each word individually.. maybe try split?
 }
 
-/* ---------------------------------------------------------- */
+/* -------------------------------------------------------- */
 
 /* Three args enter, one arg leaves */
 
@@ -59,6 +58,16 @@ var argenator = function (stringularity, sepOne, sepTwo){
 	var returnicus = stringularity.split(sepOne).join(sepTwo); // Find the seperator then replace and join w/new seperator
 	return returnicus;
 }
+
+/* ---------------------------------------------------------- */
+
+/* Cut the decimals! */
+
+var decibus = function (numPut, decPlaces){
+	var numOut = numPut.toFixed(2);
+	return numOut;
+}
+
 
 
 
@@ -69,7 +78,8 @@ return {
 	"checkIfMail" : checkIfMail,
 	"checkIfSecure" : checkIfSecure,
 	"caseSplitter" : caseSplitter,
-	"argenator" : argenator
+	"argenator" : argenator,
+	"decibus" : decibus
 }
 
 } // Ends the qLib
