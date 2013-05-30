@@ -70,6 +70,11 @@ var decibus = function (numPut, decPlaces){
 
 /* ---------------------------------------------------------- */
 
+
+
+
+/* .. begin extra credit here .. */
+
 /* Fuzzy slippers? NO! Fuzzy matching */
 
 var fuzzyLogic = function (numOne, numTwo, numThree){
@@ -95,7 +100,7 @@ var fuzzyLogic = function (numOne, numTwo, numThree){
 }
 
 /* ----------------------------------------------------------- */
-
+/* reserved space for more if time */
 
 
 /* Return Objects to the outside world */
@@ -111,5 +116,3 @@ return {
 }
 
 } // Ends the qLib
-
-

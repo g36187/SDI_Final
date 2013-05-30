@@ -18,5 +18,3 @@ console.log ("This is the number cut into 2 decimal places " + nLibstance.decibu
 console.log (fuzOne + " is " + nLibstance.fuzzyLogic(fuzOne,fuzTwo,fuzThree)[0] + " than " + fuzTwo);
 console.log (fuzOne + " is " + nLibstance.fuzzyLogic(fuzOne,fuzTwo,fuzThree)[1] + " of " + fuzTwo);
 
-
- 
